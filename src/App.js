@@ -43,7 +43,8 @@ function App() {
       style={{ WebkitTapHighlightColor: 'transparent' }}
     >
       <Routes>
-        <Route path='/home' element={<HomePage />} />
+        <Route index element={<HomePage />} />
+        <Route index path='/home' element={<HomePage />} />
         <Route path='/:id' element={<CardPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
